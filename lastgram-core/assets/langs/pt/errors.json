@@ -1,0 +1,9 @@
+{
+  "nr": {
+    "sender": "Você ainda não se registrou.\nPor favor, execute `/reg seu user do last` (por exemplo, `/reg missumuch`) e tente novamente.",
+    "other": "Este usuário ainda não se registrou no bot.\nUse `reg <user do last>` para conectar sua conta."
+  },
+  "nomention": "Você precisa dar quote ou mencionar alguém para este comando.\nTente novamente.",
+  "fm": "O last.fm aparenta estar tendo alguns problemas nesse momento.\nTente novamente mais tarde.",
+  "exec": "Hm, algo deu errado enquanto eu tentava executar esse comando.\nPor favor, tente novamente mais tarde."
+}

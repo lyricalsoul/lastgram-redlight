@@ -1,0 +1,32 @@
+{
+  "name": "@lyricalsoul/lastgram-redlight",
+  "version": "1.5.6",
+  "description": "An abstract version of Lastgram so it can be integrated with several platforms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"require('./lastgram-core/.'); ((__lgVersion[0] && __lgCore.getCommand('ln')) || process.exit(1));\" | node"
+  },
+  "author": "lyricalsoul <lyricalsoul@pm.me>",
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "dependencies": {
+    "@supabase/postgrest-js": "^0.33.0",
+    "country-emoji": "^1.5.6",
+    "crypto-js": "^4.1.1",
+    "date-fns": "^2.28.0",
+    "discord-webhook-node": "^1.1.8",
+    "express": "^4.18.1",
+    "genius-lyrics-api": "^3.2.0",
+    "marked": "^4.0.12",
+    "node-fetch": "^2.6.7"
+  },
+  "standard": {
+    "globals": [
+      "__lgCore",
+      "__lgPath",
+      "_t",
+      "__lgVersion"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "start": "Howdy! I'm Lastgram. 👋\n\nUse `/reg <your last.fm account username>` to get registered.\nIf you have any questions, [feel free to join my support group.](https://t.me/lastgramsupport).",
+  "botinfo": [
+    "**🎧 Lastgram, a last.fm robot 🎧**\n",
+    "**lastgram core version:** `v~__lgVersion.join('(')-) `",
+    "**Registered users:** `{{userCount}}`",
+    "**Song:** `Akasaka Sad`\n",
+    "**🇧🇷🇺🇸 running on Vercel**"
+  ]
+}

@@ -1,0 +1,3 @@
+{
+  "testing": "[{{coreVer}} ~(1+1) + placeholders.coreVer.split('')[0]-] Se você consegue ver isso, o sistema de i18n está funcionando normalmente."
+}

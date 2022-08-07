@@ -1,0 +1,12 @@
+{
+  "query": {
+    "ln": "{{name}}'s latest scrobbled track",
+    "cartist": "{{name}}'s 3x3 overall artist collage",
+    "ctrack": "{{name}}'s 3x3 overall track collage",
+    "calbum": "{{name}}'s 3x3 overall album collage"
+  },
+  "qtypes": {
+    "asPhoto": "send as photo",
+    "noImages": "send as text, no cover"
+  }
+}

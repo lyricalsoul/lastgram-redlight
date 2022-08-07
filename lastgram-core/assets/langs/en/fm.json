@@ -1,0 +1,100 @@
+{
+  "compat": {
+    "result": "You and **{{name}}** are **{{perc}}%** compatible.\nYou both listen to **~placeholders.artists.length < 1 ? 'everyone but each other' : placeholders.artists.join('**, **')-**.",
+    "same": "Yes, your musical taste does match your own taste."
+  },
+  "ln": [
+    "**{{name}}** ~placeholders.isPlaying ? 'is' : 'was'- listening to:",
+    "~placeholders.loved ? '💗' : '🎵'- **{{track}}**",
+    "💽 {{album}}",
+    "🧑‍🎤 {{artist}}\n",
+    "📊 *~placeholders.playCount < 0 ? '?' : placeholders.playCount + 1- scrobbles*"
+  ],
+  "alb": [
+    "**{{name}}** ~placeholders.isPlaying ? 'is' : 'was'- listening to:",
+    "💽 **{{album}}**",
+    "🧑‍🎤 {{artist}}\n",
+    "📊 *~placeholders.playCount < 0 ? '?' : placeholders.playCount + 1- scrobbles*"
+  ],
+  "art": [
+    "**{{name}}** ~placeholders.isPlaying ? 'is' : 'was'- listening to:",
+    "🧑‍🎤 **{{artist}}**\n",
+    "📊 *~placeholders.playCount < 0 ? '?' : placeholders.playCount + 1- scrobbles*"
+  ],
+  "reg": {
+    "missing": "You forgot the username. Use `reg <your last.fm username>`.",
+    "ok": "Okay, \"{{username}}\". Got it.",
+    "notfound": "The username you entered doesn't exist. Try again with the correct username."
+  },
+  "lnOther": {
+    "track": [
+      "**{{name}}** has scrobbled **~placeholders.playCount == 1 ? 'once' : (placeholders.playCount == 2 ? 'twice': placeholders.playCount + ' times')-**:",
+      "🎵 **{{track}}**",
+      "💽 {{album}}",
+      "🧑‍🎤 {{artist}}"
+    ],
+    "album": [
+      "**{{name}}** has scrobbled **~placeholders.playCount == 1 ? 'once' : (placeholders.playCount == 2 ? 'twice': placeholders.playCount + ' times')-**:",
+      "💽 **{{album}}**",
+      "🧑‍🎤 {{artist}}"
+    ],
+    "artist": [
+      "**{{name}}** has scrobbled **~placeholders.playCount == 1 ? 'once' : (placeholders.playCount == 2 ? 'twice': placeholders.playCount + ' times')-**:",
+      "🧑‍🎤 **{{artist}}**"
+    ]
+  },
+  "info": {
+    "display": [
+      "{{flagEmoji}} Data for **{{fullName}}** <<secondaryName ? `(*a.k.a. ${secondaryName}*)` : ''>><<showUser ? `([@${userName}](https://last.fm/user/${userName}))` : ''>>",
+      "🎧 **<<parseInt(scrobbles).toLocaleString('en-US')>>** scrobbles",
+      "📆 Account created **~formatDistance(placeholders.date, new Date(), { addSuffix: true })-** *(~format(placeholders.date, 'MMMM dd, yyyy')-)*",
+      "\n🗒️ Last scrobbled tracks",
+      "<<trackList>>"
+    ]
+  },
+  "ti": {
+    "malformed": "Malformed query. You should use `/<<get('cmd') || 'trackinfo'>> 911 - Lady Gaga`, for example.\nIf you want to get info for the track you are currently listening to, just use `/trackinfo`.",
+    "notfound": "Track not found. Make sure you are using `/trackinfo track name - artist name` (for example, `/trackinfo vökuro - björk`).",
+    "display": [
+      "🎵 [**{{name}} - {{artist}}**](<<url>>) <<album ? `\n📀 Found on the album *${album}*` : ''>> <<tags ? `\n#️⃣ *${tags}*` : ''>>",
+      "\n👥 **<<parseInt(listeners).toLocaleString('en-US')>>** listeners (**<<parseInt(playCount).toLocaleString('en-US')>>** total scrobbles)",
+      "<<userMode ? `*(${(userMode && userLoved) ? '❤️ ': ''}you have ${parseInt(userPlayCount).toLocaleString('en-US')} scrobbles on this track)*` : ''>>",
+      "\n<<summary>>"
+    ]
+  },
+  "albi": {
+    "malformed": "Malformed query. You should use `/albuminfo Chromatica - Lady Gaga`, for example.\nIf you want to get info for the album you are currently listening to, just use `/albuminfo`.",
+    "notfound": "Album not found. Make sure you are using `/albuminfo album name - artist name` (for example, `/albuminfo volta - björk`).",
+    "display": [
+      "💽 [**{{name}} - {{artist}}**](<<url>>) <<tags ? `\n#️⃣ *${tags}*` : ''>><<(trackCount && trackCount > 0) ? `\n🎵 **${trackCount}** tracks` : ''>>",
+      "\n👥 **<<parseInt(listeners).toLocaleString('en-US')>>** listeners (**<<parseInt(playCount).toLocaleString('en-US')>>** total scrobbles)",
+      "<<userMode ? `*(you have ${parseInt(userPlayCount).toLocaleString('en-US')} scrobbles on this album)*` : ''>>",
+      "\n<<summary>>"
+    ]
+  },
+  "arti": {
+    "malformed": "Malformed query. You should use `/artistinfo Lady Gaga`, for example.\nIf you want to get info for the artist you are currently listening to, just use `/artistinfo`.",
+    "notfound": "Artist not found. Make sure you are using `/artistinfo artist name` (for example, `/artistinfo björk`).",
+    "display": [
+      "🧑‍🎤 [**{{name}}**](<<url>>) <<tags ? `\n#️⃣ *${tags}*` : ''>>",
+      "🎎 Similar to **<<similarArtists || '...no one. truly original.'>>**",
+      "\n👥 **<<parseInt(listeners).toLocaleString('en-US')>>** listeners (**<<parseInt(playCount).toLocaleString('en-US')>>** total scrobbles)",
+      "<<userMode ? `*(you have ${parseInt(userPlayCount).toLocaleString('en-US')} scrobbles on this artist)*` : ''>>",
+      "\n<<summary>>"
+    ]
+  },
+  "love": {
+    "done": "❤️ Ok. Told last.fm you love \"**{{track}}**\", by **{{artist}}**.",
+    "undid": "💔 Sure. Told last.fm you don't love **\"{{track}}\"** anymore."
+  },
+  "similar": "🎎 [**{{name}}**](<<url>>)<<artist ? ' by **'+ artist +'**' : ''>> is similar to:\n<<similar || \"Nothing and no one. Quite a unique thing you've got going, huh?\">>",
+  "lyrics": {
+    "notfound": "Couldn't find the lyrics to this song. Are you sure you ran the command using the track - artist format (for example, `/lyrics 911 - Lady Gaga`)?",
+    "display": "Lyrics to [**{{title}}**](<<url>>) on Genius\n\n<<lyrics>>",
+    "didntFit": "__Read the rest of the lyrics on Genius.__",
+    "malformed": "Malformed query. You should use `/lyrics 911 - Lady Gaga`, for example.\nIf you want to get the lyrics for the track you are currently listening to, just use `/lyrics`."
+  },
+  "cllg": {
+    "huge": "The collage's width and height must not exceed 10."
+  }
+}

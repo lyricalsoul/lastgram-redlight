@@ -1,0 +1,10 @@
+{
+  "start": "¡Qué tal! Soy Lastgram. 👋\n\nUsa `/reg <tu usuario de lastfm>` para enlazar tu cuenta.\nSi tienes alguna pregunta, puedes unirte a nuestro [grupo de soporte](https://t.me/lastgramsupport).",
+  "botinfo": [
+    "**🎧 Lastgram, um chatbot de last.fm 🎧**\n",
+    "**Versão do lastgram core:** `v~__lgVersion.join(' (')-)`",
+    "**Usuários registrados:** `{{userCount}}`",
+    "**Música:** `Akasaka Sad`\n",
+    "**🇧🇷🇺🇸🇲🇽 sendo executado na Vercel**"
+  ]
+}

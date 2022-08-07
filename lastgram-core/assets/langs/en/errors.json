@@ -1,0 +1,10 @@
+{
+  "nr": {
+    "sender": "You aren't registered yet.\nPlease use `/reg your last.fm username` (for example, `/reg missumuch`) and try again.",
+    "other": "The user you mentioned hasn't registered themselves yet.\nUse `reg <last.fm username>` to link your account."
+  },
+  "nomention": "You have to quote or mention someone for this command.\nTry again.",
+  "fm": "last.fm is having a little bit of trouble rn...\nTry again later.",
+  "fmAuth": "An error occured. Either last.fm is having trouble right now or you disconnected lastgram from your account.\nTry again. If the problem persists, run /connect to link your last.fm account again.",
+  "exec": "Hm, this shouldn't have happened. Something went wrong while executing the command.\nLastgram support has been notified with the issue. Try again later."
+}

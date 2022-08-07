@@ -1,0 +1,12 @@
+{
+  "query": {
+    "ln": "Último scrobble de {{name}}",
+    "cartist": "{{name}}'s 3x3 overall artist collage",
+    "ctrack": "{{name}}'s 3x3 overall track collage",
+    "calbum": "{{name}}'s 3x3 overall album collage"
+  },
+  "qtypes": {
+    "asPhoto": "enviar como foto",
+    "noImages": "enviar sem imagem, só texto"
+  }
+}

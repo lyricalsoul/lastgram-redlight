@@ -1,0 +1,55 @@
+{
+  "compat": {
+    "result": "Tú y {{name}} son {{perc}}% compatibles. \nAmbos escuchan a **~placeholders.artists.length < 1 ? 'todos excepto a sí mismos' : placeholders.artists.join('**, **')-**.",
+    "same": "Sí, tu gusto es igual a tu gusto."
+  },
+  "ln": [
+    "**{{name}}** ~placeholders.isPlaying ? 'está' : 'estaba'- escuchando a:",
+    "~placeholders.loved ? '💗' : '🎵'- **{{track}}**",
+    "💽 {{album}}",
+    "🧑‍🎤 {{artist}}\n",
+    "📊 *~placeholders.playCount < 0 ? '?' : placeholders.playCount + 1- scrobbles*"
+  ],
+  "alb": [
+    "**{{name}}** ~placeholders.isPlaying ? 'está' : 'estaba'- escuchando a:",
+    "💽 **{{album}}**",
+    "🧑‍🎤 {{artist}}\n",
+    "📊 *~placeholders.playCount < 0 ? '?' : placeholders.playCount + 1- scrobbles*"
+  ],
+  "art": [
+    "**{{name}}** ~placeholders.isPlaying ? 'está' : 'estaba'- escuchando a:",
+    "🧑‍🎤 **{{artist}}**\n",
+    "📊 *~placeholders.playCount < 0 ? '?' : placeholders.playCount + 1- scrobbles*"
+  ],
+  "reg": {
+    "missing": "Te olvidaste del nombre de usuario. Usa `/reg <tu usuario de lastfm>`.",
+    "ok": "Okay, \"{{username}}\". Entendido!",
+    "notfound": "El usuario que ingresaste no existe. Intenta de nuevo con el username correcto"
+  },
+  "lnOther": {
+    "track": [
+      "**{{name}}** ha escuchado **{{playCount}} ~placeholders.playCount == 1 ? 'vez' : 'veces'-**:",
+      "🎵 **{{track}}**",
+      "💽 {{album}}",
+      "🧑‍🎤 {{artist}}"
+    ],
+    "album": [
+      "**{{name}}** ha escuchado **{{playCount}} ~placeholders.playCount == 1 ? 'vez' : 'veces'-**:",
+      "💽 **{{album}}**",
+      "🧑‍🎤 {{artist}}"
+    ],
+    "artist": [
+      "**{{name}}** ha escuchado **{{playCount}} ~placeholders.playCount == 1 ? 'vez' : 'veces'-**:",
+      "🧑‍🎤 **{{artist}}**"
+    ]
+  },
+  "info": {
+    "display": [
+      "{{flagEmoji}} Información de **{{fullName}}** <<secondaryName ? `(*a.k.a. ${secondaryName}*)` : ''>><<showUser ? `([@${userName}](https://last.fm/user/${userName}))` : ''>>",
+      "🎧 **<<parseInt(scrobbles).toLocaleString('en-US')>>** scrobbles",
+      "📆 Cuenta creada **~formatDistance(placeholders.date, new Date(), { addSuffix: true, locale: es })-** *(~format(placeholders.date, 'MMMM dd, yyyy', { locale: es })-)*",
+      "\n🗒️ Últimos scrobbles",
+      "{{trackList}}"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "nr": {
+    "sender": "No estás registrado aún.\nPor favor, usa `/reg tu usuario de lastfm` (por ejemplo, `/reg missumuch`) e intenta de nuevo.",
+    "other": "El usuario que has mencionado no se ha registrado aún.\nUsa `/reg <tu usuario de lastfm>` para enlazar tu cuenta."
+  },
+  "nomention": "Debes mencionar o responder el mensaje de alguien para que el comando trabaje.",
+  "fm": "Last.fm está teniendo algunos problemas en este momento...\nPor favor, intenta de nuevo.",
+  "exec": "Mmm, parece que algo salió mal, el grupo de soporte ha sido notificado acerca de este problema.\nIntenta de nuevo más tarde."
+}
