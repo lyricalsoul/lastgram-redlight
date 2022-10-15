@@ -2,6 +2,7 @@ const aliasDict = {
   listening: 'ln',
   pl: 'ln',
   ltn: 'ln',
+  lt: 'ln',
   lnn: 'ln',
   lnf: 'lnfull',
   lp: 'ln',
