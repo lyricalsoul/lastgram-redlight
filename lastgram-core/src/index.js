@@ -1,3 +1,5 @@
+const lightseid = require('./misc/lightseid.js')
+
 const aliasDict = {
   listening: 'ln',
   pl: 'ln',
@@ -51,6 +53,7 @@ global.__lgCore = {
   common: require('./misc/common'),
   notifier: () => require('./misc/notifier'),
   getCommand,
+  musicorum: lightseid,
   platform: (name) => require(`./platforms/${name}`),
   darkseidLink: (d, type = 'artist', x = 3, y = 3, period = 'overall', flags = undefined) => `${process.env.DARKSEID_URL || 'lastgram-blueslimee.vercel.app/api/renderc/?a=lgrocks'}&i=collage&u=${d.toLowerCase()}&d=${x}x${y}&p=${period}&t=${type}&ts=${Date.now()}` + (flags ? '&f='+ flags : '')
 }

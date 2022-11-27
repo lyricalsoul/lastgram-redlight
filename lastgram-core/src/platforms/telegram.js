@@ -7,7 +7,7 @@ const reply = (ctx, data, others = {}, replying = false) => {
   if (replying) z.reply_to_message_id = ctx.id
   if (data.photo) {
     others.photo = data.image
-    others.caption = marked.parseInline(content).trim()
+    others.caption = content && marked.parseInline(content.toString?.() || content).trim()
     others.method = 'sendPhoto'
   } else {
     content = data.image ? (content.trim() + `[\u200B](${data.image})`) : content
