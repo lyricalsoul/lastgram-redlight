@@ -1,6 +1,6 @@
 {
   "name": "@lyricalsoul/lastgram-redlight",
-  "version": "1.5.6",
+  "version": "1.6.0-rc1",
   "description": "An abstract version of Lastgram so it can be integrated with several platforms.",
   "main": "index.js",
   "scripts": {
